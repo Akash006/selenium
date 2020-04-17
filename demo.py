@@ -6,7 +6,7 @@ from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.support import expected_conditions
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
-from selenium import webdrive
+from selenium import webdriver
 import time
 
 url = input("Enter the URL : ")
@@ -20,7 +20,7 @@ time.sleep(2)
 
 name = driver.find_element_by_xpath('//*[@id="mG61Hd"]/div/div/div[2]/div[1]/div/div[2]/div/div[1]/div/div[1]/input').send_keys("Akash Saini")
 
-college = driver.find_element_by_xpath('//*[@id="mG61Hd"]/div/div/div[2]/div[2]/div/div[2]/div/span/div/div[1]/label/div/div[1]/div/div[3]/div/div').click()
+college = driver.find_element_by_xpath('docssharedWizToggleLabeledLabelText exportLabel freebirdFormviewerViewItemsRadioLabel').click()
 
 time.sleep(3)
 driver.execute_script("window.scrollTo(0, 700);")
