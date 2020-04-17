@@ -22,6 +22,10 @@ name = driver.find_element_by_xpath('//*[@id="mG61Hd"]/div/div/div[2]/div[1]/div
 
 college = driver.find_element_by_xpath('//*[@id="mG61Hd"]/div/div/div[2]/div[2]/div/div[2]/div/span/div/div[1]/label/div/div[1]/div/div[3]/div/div').click()
 
+time.sleep(3)
+driver.execute_script("window.scrollTo(0, 700);")
+time.sleep(3)
+
 stream = driver.find_element_by_xpath('//*[@id="mG61Hd"]/div/div/div[2]/div[3]/div/div[2]/div[1]/div/label/div/div[1]/div[3]').click()
 
 phone = driver.find_element_by_xpath('//*[@id="mG61Hd"]/div/div/div[2]/div[4]/div/div[2]/div/div[1]/div/div[1]/input').send_keys("9779889819")
